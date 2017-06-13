@@ -1,1 +1,3 @@
 # elasticsearchDemo
+这个项目springBoot与elasticsearch的整合，运用elasticsearch来
+对日志进行分析管理。

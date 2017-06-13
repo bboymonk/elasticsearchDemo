@@ -6,17 +6,17 @@ spring:
       local: false
       repositories:
         enabled: true
-  datasource:
-      url: jdbc:mysql://127.0.0.1:3306/wjb
-      username: root
-      password: wjb
-      dbcp:
-        driver-class-name: com.mysql.jdbc.Driver
-        max-active: 20
-        initial-size: 0
-        max-idle: 30
-        min-idle: 1
-        max-wait: 60000
-      type: com.alibaba.druid.pool.DruidDataSource
+#  datasource:
+#      url: jdbc:mysql://127.0.0.1:3306/wjb
+#      username: root
+#      password: wjb
+#      dbcp:
+#        driver-class-name: com.mysql.jdbc.Driver
+#        max-active: 20
+#        initial-size: 0
+#        max-idle: 30
+#        min-idle: 1
+#        max-wait: 60000
+#      type: com.alibaba.druid.pool.DruidDataSource
 logging:
   level: debug

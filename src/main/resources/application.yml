@@ -1,11 +1,11 @@
-spring:
-  data:
-    elasticsearch:
-      cluster-name: elasticsearch
-      cluster-nodes: localhost:9300
-      local: false
-      repositories:
-        enabled: true
+#spring:
+#  data:
+#    elasticsearch:
+#      cluster-name: elasticsearch
+#      cluster-nodes: localhost:9300
+#      local: false
+#      repositories:
+#        enabled: true
 #  datasource:
 #      url: jdbc:mysql://127.0.0.1:3306/wjb
 #      username: root

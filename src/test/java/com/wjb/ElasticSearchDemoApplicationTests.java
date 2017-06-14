@@ -19,18 +19,6 @@ import java.net.UnknownHostException;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ElasticSearchDemoApplicationTests {
-//    @Autowired
-//    private JobLogRepository repository;
-//
-//    @Test
-//    public void t1() throws UnknownHostException {
-//        TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
-//                .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
-//        List<JobLog> jobLogs = repository.findByJob_id("ac10bd26-j3dxdz5e-1u2-i-1");
-//        for (JobLog log:jobLogs){
-//            System.out.println(log.getMessage());
-//        }
-//    }
 
 
 	@Test

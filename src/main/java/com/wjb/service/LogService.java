@@ -1,17 +1,18 @@
 package com.wjb.service;
 
-import com.github.pagehelper.PageInfo;
+import com.wjb.util.PageSupport;
 
 import java.net.UnknownHostException;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by wjb on 2017/6/6.
  */
 public interface LogService {
-    List<Object> getJobIds(String key , String value) throws UnknownHostException;
+    PageSupport getJobIds(String key , String value, Integer start, Integer pageSize) throws UnknownHostException;
 
-    List<Object> getJobIdLog(String key , String value, String startDate, String endDate,Integer pageNo,Integer pageSize) throws UnknownHostException;
+    PageSupport getJobIdLog(String key , String value, String startDate, String endDate,Integer pageNo,Integer pageSize) throws UnknownHostException;
 
+
+    
+    
 }

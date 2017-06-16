@@ -37,6 +37,16 @@ public class LogController {
         return log;
     }
 
+    @ResponseBody
+    @GetMapping("logText")
+    public PageSupport getLogText(String key,String value,String startDate,String endDate,Integer start,Integer size) throws UnknownHostException {
+        int startPage = start == null || start < 1 ? 0 : (start-1);
+        int pageSize = size == null ? 20 : size;
+        startPage = startPage * pageSize;
+        PageSupport log = logService.getLogText(key, value,startDate,endDate,startPage,pageSize);
+        return log;
+    }
+
 
 
 

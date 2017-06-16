@@ -12,6 +12,8 @@ public interface LogService {
 
     PageSupport getJobIdLog(String key , String value, String startDate, String endDate,Integer pageNo,Integer pageSize) throws UnknownHostException;
 
+    PageSupport getLogText(String key , String value, String startDate, String endDate,Integer pageNo,Integer pageSize) throws UnknownHostException;
+
 
     
     

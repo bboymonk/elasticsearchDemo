@@ -6,8 +6,10 @@ import java.util.List;
  * Created by wjb on 2017/6/13.
  */
 public class PageSupport {
-
+    private String[] obj;
     private List<Object> list;
+
+    private StringBuffer buffer;
 
     //总页数
     private int totalPageCount=1;
@@ -56,6 +58,22 @@ public class PageSupport {
 
     public void setList(List<Object> list) {
         this.list = list;
+    }
+
+    public StringBuffer getBuffer() {
+        return buffer;
+    }
+
+    public void setBuffer(StringBuffer buffer) {
+        this.buffer = buffer;
+    }
+
+    public String[] getObj() {
+        return obj;
+    }
+
+    public void setObj(String[] obj) {
+        this.obj = obj;
     }
 
     //设置总页数
